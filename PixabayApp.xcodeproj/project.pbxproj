@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C16831C02808262D00A2E035 /* PixabayAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16831BF2808262D00A2E035 /* PixabayAppApp.swift */; };
+		C16831C02808262D00A2E035 /* PixabayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16831BF2808262D00A2E035 /* PixabayApp.swift */; };
 		C16831C22808262D00A2E035 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16831C12808262D00A2E035 /* ContentView.swift */; };
 		C16831C42808262E00A2E035 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C16831C32808262E00A2E035 /* Assets.xcassets */; };
 		C16831C72808262E00A2E035 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C16831C62808262E00A2E035 /* Preview Assets.xcassets */; };
@@ -42,7 +42,7 @@
 
 /* Begin PBXFileReference section */
 		C16831BC2808262D00A2E035 /* PixabayApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixabayApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C16831BF2808262D00A2E035 /* PixabayAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixabayAppApp.swift; sourceTree = "<group>"; };
+		C16831BF2808262D00A2E035 /* PixabayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixabayApp.swift; sourceTree = "<group>"; };
 		C16831C12808262D00A2E035 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C16831C32808262E00A2E035 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C16831C62808262E00A2E035 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -89,7 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				C16831BE2808262D00A2E035 /* PixabayApp */,
-				C16831E92808521C00A2E035 /* Domain */,
 				C16831CF2808262E00A2E035 /* PixabayAppTests */,
 				C16831D92808262E00A2E035 /* PixabayAppUITests */,
 				C16831BD2808262D00A2E035 /* Products */,
@@ -109,8 +108,10 @@
 		C16831BE2808262D00A2E035 /* PixabayApp */ = {
 			isa = PBXGroup;
 			children = (
-				C16831BF2808262D00A2E035 /* PixabayAppApp.swift */,
+				C16831BF2808262D00A2E035 /* PixabayApp.swift */,
 				C16831C12808262D00A2E035 /* ContentView.swift */,
+				C16832002808793D00A2E035 /* Services */,
+				C16831EA2808522100A2E035 /* PixabayImages */,
 				C16831C32808262E00A2E035 /* Assets.xcassets */,
 				C16831C52808262E00A2E035 /* Preview Content */,
 			);
@@ -140,14 +141,6 @@
 				C16831DC2808262E00A2E035 /* PixabayAppUITestsLaunchTests.swift */,
 			);
 			path = PixabayAppUITests;
-			sourceTree = "<group>";
-		};
-		C16831E92808521C00A2E035 /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				C16831EA2808522100A2E035 /* PixabayImages */,
-			);
-			path = Domain;
 			sourceTree = "<group>";
 		};
 		C16831EA2808522100A2E035 /* PixabayImages */ = {
@@ -194,6 +187,21 @@
 				C16831F4280854F100A2E035 /* PixabayImageDetailView.swift */,
 			);
 			path = PixabayImageDetails;
+			sourceTree = "<group>";
+		};
+		C16832002808793D00A2E035 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C1683201280882A600A2E035 /* Networking */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C1683201280882A600A2E035 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,7 +340,7 @@
 				C16831EE2808542C00A2E035 /* PixabayImage.swift in Sources */,
 				C16831F9280857D500A2E035 /* SearchImagesInteractor.swift in Sources */,
 				C16831FF2808580100A2E035 /* SearchImagesConfigurator.swift in Sources */,
-				C16831C02808262D00A2E035 /* PixabayAppApp.swift in Sources */,
+				C16831C02808262D00A2E035 /* PixabayApp.swift in Sources */,
 				C16831FB280857E600A2E035 /* SearchImagesPresenter.swift in Sources */,
 				C16831FD280857F400A2E035 /* SearchImagesModel.swift in Sources */,
 			);

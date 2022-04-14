@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct PixabayAppApp: App {
+struct PixabayApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
