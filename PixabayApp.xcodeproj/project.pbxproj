@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C16831C02808262D00A2E035 /* PixabayAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16831BF2808262D00A2E035 /* PixabayAppApp.swift */; };
+		C16831C22808262D00A2E035 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16831C12808262D00A2E035 /* ContentView.swift */; };
+		C16831C42808262E00A2E035 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C16831C32808262E00A2E035 /* Assets.xcassets */; };
+		C16831C72808262E00A2E035 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C16831C62808262E00A2E035 /* Preview Assets.xcassets */; };
+		C16831D12808262E00A2E035 /* PixabayAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16831D02808262E00A2E035 /* PixabayAppTests.swift */; };
+		C16831DB2808262E00A2E035 /* PixabayAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16831DA2808262E00A2E035 /* PixabayAppUITests.swift */; };
+		C16831DD2808262E00A2E035 /* PixabayAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16831DC2808262E00A2E035 /* PixabayAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C16831CD2808262E00A2E035 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C16831B42808262D00A2E035 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C16831BB2808262D00A2E035;
+			remoteInfo = PixabayApp;
+		};
+		C16831D72808262E00A2E035 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C16831B42808262D00A2E035 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C16831BB2808262D00A2E035;
+			remoteInfo = PixabayApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C16831BC2808262D00A2E035 /* PixabayApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixabayApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C16831BF2808262D00A2E035 /* PixabayAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixabayAppApp.swift; sourceTree = "<group>"; };
+		C16831C12808262D00A2E035 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C16831C32808262E00A2E035 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C16831C62808262E00A2E035 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C16831CC2808262E00A2E035 /* PixabayAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixabayAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C16831D02808262E00A2E035 /* PixabayAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixabayAppTests.swift; sourceTree = "<group>"; };
+		C16831D62808262E00A2E035 /* PixabayAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixabayAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C16831DA2808262E00A2E035 /* PixabayAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixabayAppUITests.swift; sourceTree = "<group>"; };
+		C16831DC2808262E00A2E035 /* PixabayAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixabayAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C16831B92808262D00A2E035 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C16831C92808262E00A2E035 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C16831D32808262E00A2E035 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C16831B32808262D00A2E035 = {
+			isa = PBXGroup;
+			children = (
+				C16831BE2808262D00A2E035 /* PixabayApp */,
+				C16831CF2808262E00A2E035 /* PixabayAppTests */,
+				C16831D92808262E00A2E035 /* PixabayAppUITests */,
+				C16831BD2808262D00A2E035 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C16831BD2808262D00A2E035 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C16831BC2808262D00A2E035 /* PixabayApp.app */,
+				C16831CC2808262E00A2E035 /* PixabayAppTests.xctest */,
+				C16831D62808262E00A2E035 /* PixabayAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C16831BE2808262D00A2E035 /* PixabayApp */ = {
+			isa = PBXGroup;
+			children = (
+				C16831BF2808262D00A2E035 /* PixabayAppApp.swift */,
+				C16831C12808262D00A2E035 /* ContentView.swift */,
+				C16831C32808262E00A2E035 /* Assets.xcassets */,
+				C16831C52808262E00A2E035 /* Preview Content */,
+			);
+			path = PixabayApp;
+			sourceTree = "<group>";
+		};
+		C16831C52808262E00A2E035 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C16831C62808262E00A2E035 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C16831CF2808262E00A2E035 /* PixabayAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				C16831D02808262E00A2E035 /* PixabayAppTests.swift */,
+			);
+			path = PixabayAppTests;
+			sourceTree = "<group>";
+		};
+		C16831D92808262E00A2E035 /* PixabayAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C16831DA2808262E00A2E035 /* PixabayAppUITests.swift */,
+				C16831DC2808262E00A2E035 /* PixabayAppUITestsLaunchTests.swift */,
+			);
+			path = PixabayAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C16831BB2808262D00A2E035 /* PixabayApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C16831E02808262E00A2E035 /* Build configuration list for PBXNativeTarget "PixabayApp" */;
+			buildPhases = (
+				C16831B82808262D00A2E035 /* Sources */,
+				C16831B92808262D00A2E035 /* Frameworks */,
+				C16831BA2808262D00A2E035 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PixabayApp;
+			productName = PixabayApp;
+			productReference = C16831BC2808262D00A2E035 /* PixabayApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C16831CB2808262E00A2E035 /* PixabayAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C16831E32808262E00A2E035 /* Build configuration list for PBXNativeTarget "PixabayAppTests" */;
+			buildPhases = (
+				C16831C82808262E00A2E035 /* Sources */,
+				C16831C92808262E00A2E035 /* Frameworks */,
+				C16831CA2808262E00A2E035 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C16831CE2808262E00A2E035 /* PBXTargetDependency */,
+			);
+			name = PixabayAppTests;
+			productName = PixabayAppTests;
+			productReference = C16831CC2808262E00A2E035 /* PixabayAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C16831D52808262E00A2E035 /* PixabayAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C16831E62808262E00A2E035 /* Build configuration list for PBXNativeTarget "PixabayAppUITests" */;
+			buildPhases = (
+				C16831D22808262E00A2E035 /* Sources */,
+				C16831D32808262E00A2E035 /* Frameworks */,
+				C16831D42808262E00A2E035 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C16831D82808262E00A2E035 /* PBXTargetDependency */,
+			);
+			name = PixabayAppUITests;
+			productName = PixabayAppUITests;
+			productReference = C16831D62808262E00A2E035 /* PixabayAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C16831B42808262D00A2E035 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					C16831BB2808262D00A2E035 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					C16831CB2808262E00A2E035 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = C16831BB2808262D00A2E035;
+					};
+					C16831D52808262E00A2E035 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = C16831BB2808262D00A2E035;
+					};
+				};
+			};
+			buildConfigurationList = C16831B72808262D00A2E035 /* Build configuration list for PBXProject "PixabayApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C16831B32808262D00A2E035;
+			productRefGroup = C16831BD2808262D00A2E035 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C16831BB2808262D00A2E035 /* PixabayApp */,
+				C16831CB2808262E00A2E035 /* PixabayAppTests */,
+				C16831D52808262E00A2E035 /* PixabayAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C16831BA2808262D00A2E035 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C16831C72808262E00A2E035 /* Preview Assets.xcassets in Resources */,
+				C16831C42808262E00A2E035 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C16831CA2808262E00A2E035 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C16831D42808262E00A2E035 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C16831B82808262D00A2E035 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C16831C22808262D00A2E035 /* ContentView.swift in Sources */,
+				C16831C02808262D00A2E035 /* PixabayAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C16831C82808262E00A2E035 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C16831D12808262E00A2E035 /* PixabayAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C16831D22808262E00A2E035 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C16831DB2808262E00A2E035 /* PixabayAppUITests.swift in Sources */,
+				C16831DD2808262E00A2E035 /* PixabayAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C16831CE2808262E00A2E035 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C16831BB2808262D00A2E035 /* PixabayApp */;
+			targetProxy = C16831CD2808262E00A2E035 /* PBXContainerItemProxy */;
+		};
+		C16831D82808262E00A2E035 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C16831BB2808262D00A2E035 /* PixabayApp */;
+			targetProxy = C16831D72808262E00A2E035 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C16831DE2808262E00A2E035 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C16831DF2808262E00A2E035 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C16831E12808262E00A2E035 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PixabayApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 99UQGBHMVX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.rayansaeed.PixabayApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C16831E22808262E00A2E035 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PixabayApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 99UQGBHMVX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.rayansaeed.PixabayApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C16831E42808262E00A2E035 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 99UQGBHMVX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.rayansaeed.PixabayAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PixabayApp.app/PixabayApp";
+			};
+			name = Debug;
+		};
+		C16831E52808262E00A2E035 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 99UQGBHMVX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.rayansaeed.PixabayAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PixabayApp.app/PixabayApp";
+			};
+			name = Release;
+		};
+		C16831E72808262E00A2E035 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 99UQGBHMVX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.rayansaeed.PixabayAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PixabayApp;
+			};
+			name = Debug;
+		};
+		C16831E82808262E00A2E035 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 99UQGBHMVX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.rayansaeed.PixabayAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PixabayApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C16831B72808262D00A2E035 /* Build configuration list for PBXProject "PixabayApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C16831DE2808262E00A2E035 /* Debug */,
+				C16831DF2808262E00A2E035 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C16831E02808262E00A2E035 /* Build configuration list for PBXNativeTarget "PixabayApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C16831E12808262E00A2E035 /* Debug */,
+				C16831E22808262E00A2E035 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C16831E32808262E00A2E035 /* Build configuration list for PBXNativeTarget "PixabayAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C16831E42808262E00A2E035 /* Debug */,
+				C16831E52808262E00A2E035 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C16831E62808262E00A2E035 /* Build configuration list for PBXNativeTarget "PixabayAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C16831E72808262E00A2E035 /* Debug */,
+				C16831E82808262E00A2E035 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C16831B42808262D00A2E035 /* Project object */;
+}
