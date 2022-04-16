@@ -6,16 +6,17 @@
 //
 
 import Foundation
+import SwiftUI
 
 extension SearchImagesView {
-	  func configureView() -> some View {
-			var view = self
-			let interactor = SearchImagesInteractor()
-			let presenter = SearchImagesPresenter()
-			view.interactor = interactor
-			interactor.presenter = presenter
-			presenter.view = view
+	func configureView() -> some View {
+		var view = self
+		let interactor = SearchImagesInteractor()
+		let presenter = SearchImagesPresenter()
+		view.interactor = interactor
+		interactor.presenter = presenter
+		presenter.view = view
 
-			return view
-	  }
+		return view
+	}
 }
