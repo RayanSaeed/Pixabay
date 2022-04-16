@@ -21,6 +21,10 @@
 		C16831FB280857E600A2E035 /* SearchImagesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16831FA280857E600A2E035 /* SearchImagesPresenter.swift */; };
 		C16831FD280857F400A2E035 /* SearchImagesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16831FC280857F400A2E035 /* SearchImagesModel.swift */; };
 		C16831FF2808580100A2E035 /* SearchImagesConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16831FE2808580100A2E035 /* SearchImagesConfigurator.swift */; };
+		C16832032808884800A2E035 /* CombineAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16832022808884800A2E035 /* CombineAPI.swift */; };
+		C16832052808888200A2E035 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16832042808888200A2E035 /* APIError.swift */; };
+		C16832072808898100A2E035 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16832062808898100A2E035 /* Endpoint.swift */; };
+		C1683209280889C100A2E035 /* SearchImagesNetworkWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1683208280889C100A2E035 /* SearchImagesNetworkWorker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,10 @@
 		C16831FA280857E600A2E035 /* SearchImagesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchImagesPresenter.swift; sourceTree = "<group>"; };
 		C16831FC280857F400A2E035 /* SearchImagesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchImagesModel.swift; sourceTree = "<group>"; };
 		C16831FE2808580100A2E035 /* SearchImagesConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchImagesConfigurator.swift; sourceTree = "<group>"; };
+		C16832022808884800A2E035 /* CombineAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineAPI.swift; sourceTree = "<group>"; };
+		C16832042808888200A2E035 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		C16832062808898100A2E035 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		C1683208280889C100A2E035 /* SearchImagesNetworkWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchImagesNetworkWorker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +185,7 @@
 				C16831F8280857D500A2E035 /* SearchImagesInteractor.swift */,
 				C16831FA280857E600A2E035 /* SearchImagesPresenter.swift */,
 				C16831FC280857F400A2E035 /* SearchImagesModel.swift */,
+				C1683208280889C100A2E035 /* SearchImagesNetworkWorker.swift */,
 			);
 			path = SearchImages;
 			sourceTree = "<group>";
@@ -200,6 +209,9 @@
 		C1683201280882A600A2E035 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				C16832022808884800A2E035 /* CombineAPI.swift */,
+				C16832042808888200A2E035 /* APIError.swift */,
+				C16832062808898100A2E035 /* Endpoint.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -337,12 +349,16 @@
 				C16831F12808545600A2E035 /* SearchImagesView.swift in Sources */,
 				C16831C22808262D00A2E035 /* ContentView.swift in Sources */,
 				C16831F5280854F100A2E035 /* PixabayImageDetailView.swift in Sources */,
+				C16832032808884800A2E035 /* CombineAPI.swift in Sources */,
 				C16831EE2808542C00A2E035 /* PixabayImage.swift in Sources */,
 				C16831F9280857D500A2E035 /* SearchImagesInteractor.swift in Sources */,
+				C1683209280889C100A2E035 /* SearchImagesNetworkWorker.swift in Sources */,
 				C16831FF2808580100A2E035 /* SearchImagesConfigurator.swift in Sources */,
 				C16831C02808262D00A2E035 /* PixabayApp.swift in Sources */,
 				C16831FB280857E600A2E035 /* SearchImagesPresenter.swift in Sources */,
 				C16831FD280857F400A2E035 /* SearchImagesModel.swift in Sources */,
+				C16832072808898100A2E035 /* Endpoint.swift in Sources */,
+				C16832052808888200A2E035 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  PixabayAppApp.swift
+//  PixabayApp.swift
 //  PixabayApp
 //
 //  Created by Rayan Saeed on 14/04/2022.
