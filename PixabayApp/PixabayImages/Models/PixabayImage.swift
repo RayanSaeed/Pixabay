@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct PixabayImage {
+struct PixabayImage: Codable {
 	
 }
