@@ -13,7 +13,7 @@ protocol SearchImagesDisplayLogic {
 
 extension SearchImagesView: SearchImagesDisplayLogic {
 	func displayImages(viewModel: SearchImages.Search.ViewModel) {
-		self.imageURLs = viewModel.images
+		imagesDataStore.imageURLs = viewModel.images
 	}
 
 	func fetchImages(keyword: String) {
@@ -26,7 +26,7 @@ struct SearchImagesView: View {
 	var interactor: SearchImagesBusinessLogic?
 
 	@State private var searchText: String = ""
-	@State var imageURLs = [URL]()
+	@ObservedObject var imagesDataStore = ImagesDataStore()
 
 	let gridSpacing = 3.0
 	let columns = [
@@ -40,7 +40,7 @@ struct SearchImagesView: View {
 			GeometryReader { geo in
 				ScrollView {
 					LazyVGrid(columns: columns, spacing: gridSpacing) {
-						ForEach(imageURLs, id: \.self) { url in
+						ForEach(imagesDataStore.imageURLs, id: \.self) { url in
 							AsyncImage(
 							   url: url,
 							   placeholder: { Text("Loading ...") },
@@ -57,7 +57,6 @@ struct SearchImagesView: View {
 		}
 		.searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
 		.onSubmit(of: .search) {
-			print("Search was initiated: \(searchText)")
 			fetchImages(keyword: searchText)
 		}
 	}
