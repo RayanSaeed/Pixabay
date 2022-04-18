@@ -11,7 +11,7 @@ import SwiftUI
 struct PixabayApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+			SearchImagesView().configureView()
         }
     }
 }
