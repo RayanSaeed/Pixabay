@@ -43,11 +43,12 @@ struct SearchImagesView: View {
 						ForEach(imagesDataStore.imageURLs, id: \.self) { url in
 							AsyncImage(
 							   url: url,
-							   placeholder: { Text("Loading ...") },
+							   placeholder: {
+								   ProgressView()
+							   },
 							   image: { Image(uiImage: $0).resizable() }
 							)
 							.frame(width: geo.size.width / 3, height: geo.size.width / 3)
-							.background(.gray)
 						}
 					}
 				}
