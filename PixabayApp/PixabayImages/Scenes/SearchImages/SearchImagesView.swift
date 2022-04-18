@@ -13,7 +13,7 @@ protocol SearchImagesDisplayLogic {
 
 extension SearchImagesView: SearchImagesDisplayLogic {
 	func displayImages(viewModel: SearchImages.Search.ViewModel) {
-		self.images = viewModel.images
+		self.imageURLs = viewModel.images
 	}
 
 	func fetchImages(keyword: String) {
@@ -26,20 +26,26 @@ struct SearchImagesView: View {
 	var interactor: SearchImagesBusinessLogic?
 
 	@State private var searchText: String = ""
-	@State var images: [Image]?
+	@State var imageURLs = [URL]()
+
+	let gridSpacing = 3.0
+	let columns = [
+		GridItem(.flexible()),
+		GridItem(.flexible()),
+		GridItem(.flexible())
+	]
 
 	var body: some View {
 		NavigationView{
 			GeometryReader { geo in
 				ScrollView {
-					LazyVGrid(columns: [
-						GridItem(.flexible()),
-						GridItem(.flexible()),
-						GridItem(.flexible())
-					], spacing: 3) {
-//						ForEach(images, \.self) { image in
-						ForEach(0..<10) { _ in
-							Image(systemName: "circle")
+					LazyVGrid(columns: columns, spacing: gridSpacing) {
+						ForEach(imageURLs, id: \.self) { url in
+							AsyncImage(
+							   url: url,
+							   placeholder: { Text("Loading ...") },
+							   image: { Image(uiImage: $0).resizable() }
+							)
 							.frame(width: geo.size.width / 3, height: geo.size.width / 3)
 							.background(.gray)
 						}
@@ -50,6 +56,10 @@ struct SearchImagesView: View {
 
 		}
 		.searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
+		.onSubmit(of: .search) {
+			print("Search was initiated: \(searchText)")
+			fetchImages(keyword: searchText)
+		}
 	}
 }
 
