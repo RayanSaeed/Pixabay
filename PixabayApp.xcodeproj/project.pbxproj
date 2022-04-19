@@ -25,6 +25,11 @@
 		C16832072808898100A2E035 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16832062808898100A2E035 /* Endpoint.swift */; };
 		C1683209280889C100A2E035 /* SearchImagesNetworkWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1683208280889C100A2E035 /* SearchImagesNetworkWorker.swift */; };
 		C18FA5A3280DEE9900A0FD46 /* View+HideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18FA5A2280DEE9900A0FD46 /* View+HideKeyboard.swift */; };
+		C18FA5A5280E76A900A0FD46 /* ImageDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18FA5A4280E76A900A0FD46 /* ImageDetailsInteractor.swift */; };
+		C18FA5A7280E76C400A0FD46 /* ImageDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18FA5A6280E76C400A0FD46 /* ImageDetailsPresenter.swift */; };
+		C18FA5A9280E76E300A0FD46 /* ImageDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18FA5A8280E76E300A0FD46 /* ImageDetailsModel.swift */; };
+		C18FA5AB280E770E00A0FD46 /* ImageDetailsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18FA5AA280E770E00A0FD46 /* ImageDetailsConfigurator.swift */; };
+		C18FA5AD280E7B8700A0FD46 /* SearchImagesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18FA5AC280E7B8700A0FD46 /* SearchImagesRouter.swift */; };
 		C1E20589280DB46D00A65D88 /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E20588280DB46D00A65D88 /* AsyncImage.swift */; };
 		C1E2058C280DB55C00A65D88 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E2058B280DB55C00A65D88 /* ImageLoader.swift */; };
 		C1E2058F280DB5B000A65D88 /* EnvironmentValues+ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E2058E280DB5B000A65D88 /* EnvironmentValues+ImageCache.swift */; };
@@ -71,6 +76,11 @@
 		C16832062808898100A2E035 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		C1683208280889C100A2E035 /* SearchImagesNetworkWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchImagesNetworkWorker.swift; sourceTree = "<group>"; };
 		C18FA5A2280DEE9900A0FD46 /* View+HideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+HideKeyboard.swift"; sourceTree = "<group>"; };
+		C18FA5A4280E76A900A0FD46 /* ImageDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsInteractor.swift; sourceTree = "<group>"; };
+		C18FA5A6280E76C400A0FD46 /* ImageDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsPresenter.swift; sourceTree = "<group>"; };
+		C18FA5A8280E76E300A0FD46 /* ImageDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsModel.swift; sourceTree = "<group>"; };
+		C18FA5AA280E770E00A0FD46 /* ImageDetailsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailsConfigurator.swift; sourceTree = "<group>"; };
+		C18FA5AC280E7B8700A0FD46 /* SearchImagesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchImagesRouter.swift; sourceTree = "<group>"; };
 		C1E20588280DB46D00A65D88 /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
 		C1E2058B280DB55C00A65D88 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		C1E2058E280DB5B000A65D88 /* EnvironmentValues+ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+ImageCache.swift"; sourceTree = "<group>"; };
@@ -199,6 +209,7 @@
 				C16831F8280857D500A2E035 /* SearchImagesInteractor.swift */,
 				C16831FA280857E600A2E035 /* SearchImagesPresenter.swift */,
 				C16831FC280857F400A2E035 /* SearchImagesModel.swift */,
+				C18FA5AC280E7B8700A0FD46 /* SearchImagesRouter.swift */,
 			);
 			path = SearchImages;
 			sourceTree = "<group>";
@@ -206,7 +217,11 @@
 		C16831F3280854CB00A2E035 /* ImageDetails */ = {
 			isa = PBXGroup;
 			children = (
+				C18FA5AA280E770E00A0FD46 /* ImageDetailsConfigurator.swift */,
 				C16831F4280854F100A2E035 /* ImageDetailsView.swift */,
+				C18FA5A4280E76A900A0FD46 /* ImageDetailsInteractor.swift */,
+				C18FA5A6280E76C400A0FD46 /* ImageDetailsPresenter.swift */,
+				C18FA5A8280E76E300A0FD46 /* ImageDetailsModel.swift */,
 			);
 			path = ImageDetails;
 			sourceTree = "<group>";
@@ -400,17 +415,22 @@
 				C1E2058F280DB5B000A65D88 /* EnvironmentValues+ImageCache.swift in Sources */,
 				C18FA5A3280DEE9900A0FD46 /* View+HideKeyboard.swift in Sources */,
 				C16831F5280854F100A2E035 /* ImageDetailsView.swift in Sources */,
+				C18FA5A9280E76E300A0FD46 /* ImageDetailsModel.swift in Sources */,
 				C16832032808884800A2E035 /* CombineAPI.swift in Sources */,
 				C1E20594280DE40000A65D88 /* ImagesDataStore.swift in Sources */,
 				C16831EE2808542C00A2E035 /* PixabayImage.swift in Sources */,
+				C18FA5A7280E76C400A0FD46 /* ImageDetailsPresenter.swift in Sources */,
 				C16831F9280857D500A2E035 /* SearchImagesInteractor.swift in Sources */,
 				C1683209280889C100A2E035 /* SearchImagesNetworkWorker.swift in Sources */,
 				C16831FF2808580100A2E035 /* SearchImagesConfigurator.swift in Sources */,
 				C16831C02808262D00A2E035 /* PixabayApp.swift in Sources */,
+				C18FA5A5280E76A900A0FD46 /* ImageDetailsInteractor.swift in Sources */,
 				C16831FB280857E600A2E035 /* SearchImagesPresenter.swift in Sources */,
 				C16831FD280857F400A2E035 /* SearchImagesModel.swift in Sources */,
+				C18FA5AD280E7B8700A0FD46 /* SearchImagesRouter.swift in Sources */,
 				C16832072808898100A2E035 /* Endpoint.swift in Sources */,
 				C16832052808888200A2E035 /* APIError.swift in Sources */,
+				C18FA5AB280E770E00A0FD46 /* ImageDetailsConfigurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

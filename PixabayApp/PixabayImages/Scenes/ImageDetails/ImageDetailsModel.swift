@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+enum ImageDetails {
+	enum Details {
+		struct Request { }
+
+		struct Response { }
+
+		struct ViewModel {
+			var image: PixabayImage
+		}
+	}
+}
