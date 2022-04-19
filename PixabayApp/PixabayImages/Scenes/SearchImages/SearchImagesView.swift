@@ -22,8 +22,21 @@ extension SearchImagesView: SearchImagesDisplayLogic {
 	}
 }
 
+extension SearchImagesView {
+	func linkBuilder<Content: View>(
+		for image: PixabayImage,
+		@ViewBuilder content: () -> Content
+	  ) -> some View {
+		NavigationLink(
+		  destination: router?.makeImageDetailsView(with: image)) {
+			  content()
+		}
+	}
+}
+
 struct SearchImagesView: View {
 	var interactor: SearchImagesBusinessLogic?
+	var router: SearchImagesRouter?
 
 	@State private var searchText: String = ""
 	@ObservedObject var imagesDataStore = ImagesDataStore()
@@ -41,20 +54,22 @@ struct SearchImagesView: View {
 				ScrollView {
 					LazyVGrid(columns: columns, spacing: gridSpacing) {
 						ForEach(imagesDataStore.imageURLs, id: \.self) { url in
-							AsyncImage(
-								url: url,
-								placeholder: { ProgressView() },
-								image: { Image(uiImage: $0).resizable() }
-							)
-							.aspectRatio(contentMode: .fill)
-							.frame(width: geo.size.width / 3, height: geo.size.width / 3)
-							.clipped()
+							linkBuilder(for: PixabayImage.sampleImage, content: {
+								AsyncImage(
+									url: url,
+									placeholder: { ProgressView() },
+									image: { Image(uiImage: $0).resizable() }
+								)
+								.aspectRatio(contentMode: .fill)
+								.frame(width: geo.size.width / 3, height: geo.size.width / 3)
+								.clipped()
+							})
 						}
 					}
 				}
 				.gesture(DragGesture().onChanged{ _ in hideKeyboard() })
 			}
-			.navigationBarTitle(Text("Pixabay Images"), displayMode: .inline)
+			.navigationBarTitle(Text("Pixabay Images"), displayMode: .automatic)
 
 		}
 		.searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
@@ -66,6 +81,6 @@ struct SearchImagesView: View {
 
 struct SearchImagesView_Previews: PreviewProvider {
 	static var previews: some View {
-		SearchImagesView()
+		SearchImagesView().configureView()
 	}
 }
