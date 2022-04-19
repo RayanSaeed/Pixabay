@@ -36,22 +36,23 @@ struct SearchImagesView: View {
 	]
 
 	var body: some View {
-		NavigationView{
+		NavigationView {
 			GeometryReader { geo in
 				ScrollView {
 					LazyVGrid(columns: columns, spacing: gridSpacing) {
 						ForEach(imagesDataStore.imageURLs, id: \.self) { url in
 							AsyncImage(
-							   url: url,
-							   placeholder: {
-								   ProgressView()
-							   },
-							   image: { Image(uiImage: $0).resizable() }
+								url: url,
+								placeholder: { ProgressView() },
+								image: { Image(uiImage: $0).resizable() }
 							)
+							.aspectRatio(contentMode: .fill)
 							.frame(width: geo.size.width / 3, height: geo.size.width / 3)
+							.clipped()
 						}
 					}
 				}
+				.gesture(DragGesture().onChanged{ _ in hideKeyboard() })
 			}
 			.navigationBarTitle(Text("Pixabay Images"), displayMode: .inline)
 
@@ -68,4 +69,3 @@ struct SearchImagesView_Previews: PreviewProvider {
 		SearchImagesView()
 	}
 }
-
