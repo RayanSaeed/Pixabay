@@ -12,10 +12,10 @@ protocol SearchImagesBusinessLogic {
 	func loadImages(request: SearchImages.Search.Request)
 }
 
-class SearchImagesInteractor {
+final class SearchImagesInteractor {
 	var presenter: SearchImagesPresentationLogic?
-	let networkWorker = SearchImagesNetworkWorker()
-	var cancellables = Set<AnyCancellable>()
+	private let networkWorker = SearchImagesNetworkWorker()
+	private var cancellables = Set<AnyCancellable>()
 }
 
 extension SearchImagesInteractor: SearchImagesBusinessLogic, ObservableObject {

@@ -9,7 +9,7 @@ import Foundation
 
 protocol ImageDetailsPresentationLogic { }
 
-class ImageDetailsPresenter {
+final class ImageDetailsPresenter {
 	var view: ImageDetailsDisplayLogic?
 }
 

@@ -13,7 +13,7 @@ protocol SearchImagesRoutingLogic {
 	func makeImageDetailsView(with pixabayImage: PixabayImage) -> V
 }
 
-class SearchImagesRouter: SearchImagesRoutingLogic {
+final class SearchImagesRouter: SearchImagesRoutingLogic {
 
 	func makeImageDetailsView(with pixabayImage: PixabayImage) -> some View {
 		let detailsView = ImageDetailsView(image: pixabayImage).configureView()

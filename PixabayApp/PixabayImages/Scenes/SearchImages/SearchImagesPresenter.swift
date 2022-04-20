@@ -11,7 +11,7 @@ protocol SearchImagesPresentationLogic {
 	func presentImages(response: SearchImages.Search.Response)
 }
 
-class SearchImagesPresenter {
+final class SearchImagesPresenter {
 	var view: SearchImagesDisplayLogic?
 }
 

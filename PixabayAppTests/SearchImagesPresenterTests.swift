@@ -8,7 +8,7 @@
 import XCTest
 @testable import PixabayApp
 
-class SearchImagePresenterTests: XCTestCase {
+final class SearchImagePresenterTests: XCTestCase {
 	var sut: SearchImagesPresenter!
 	var viewSpy: SearchImagesViewSpy!
 
@@ -19,7 +19,7 @@ class SearchImagePresenterTests: XCTestCase {
 	}
 
 	// MARK: - Test doubles
-	class SearchImagesViewSpy {}
+	final class SearchImagesViewSpy {}
 
 	// MARK: - Tests
 

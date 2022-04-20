@@ -7,7 +7,7 @@
 
 import XCTest
 
-class PixabayAppUITestsLaunchTests: XCTestCase {
+final class PixabayAppUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

@@ -10,7 +10,7 @@ import Combine
 
 protocol ImageDetailsBusinessLogic { }
 
-class ImageDetailsInteractor {
+final class ImageDetailsInteractor {
 	var presenter: ImageDetailsPresentationLogic?
 }
 

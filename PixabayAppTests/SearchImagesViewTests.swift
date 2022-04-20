@@ -8,7 +8,7 @@
 import XCTest
 @testable import PixabayApp
 
-class SearchImageViewTests: XCTestCase {
+final class SearchImageViewTests: XCTestCase {
 	var sut: SearchImagesView!
 	var interactorSpy: SearchImagesInteractorSpy!
 
@@ -19,7 +19,7 @@ class SearchImageViewTests: XCTestCase {
 	}
 
 	// MARK: - Test doubles
-	class SearchImagesInteractorSpy: SearchImagesBusinessLogic {
+	final class SearchImagesInteractorSpy: SearchImagesBusinessLogic {
 		var loadImagesCalled = false
 
 		func loadImages(request: SearchImages.Search.Request) {

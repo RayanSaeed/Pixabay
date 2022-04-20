@@ -7,6 +7,6 @@
 
 import Foundation
 
-class ImagesDataStore: ObservableObject {
+final class ImagesDataStore: ObservableObject {
 	@Published var images: [PixabayImage] = []
 }
