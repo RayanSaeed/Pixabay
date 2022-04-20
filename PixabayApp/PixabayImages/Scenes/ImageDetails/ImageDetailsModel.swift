@@ -13,8 +13,6 @@ enum ImageDetails {
 
 		struct Response { }
 
-		struct ViewModel {
-			var image: PixabayImage
-		}
+		struct ViewModel { }
 	}
 }

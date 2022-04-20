@@ -8,5 +8,5 @@
 import Foundation
 
 class ImagesDataStore: ObservableObject {
-	@Published var imageURLs: [URL] = []
+	@Published var images: [PixabayImage] = []
 }

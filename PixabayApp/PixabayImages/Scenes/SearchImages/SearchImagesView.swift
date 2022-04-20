@@ -13,7 +13,7 @@ protocol SearchImagesDisplayLogic {
 
 extension SearchImagesView: SearchImagesDisplayLogic {
 	func displayImages(viewModel: SearchImages.Search.ViewModel) {
-		imagesDataStore.imageURLs = viewModel.images
+		imagesDataStore.images = viewModel.images
 	}
 
 	func fetchImages(keyword: String) {
@@ -53,10 +53,10 @@ struct SearchImagesView: View {
 			GeometryReader { geo in
 				ScrollView {
 					LazyVGrid(columns: columns, spacing: gridSpacing) {
-						ForEach(imagesDataStore.imageURLs, id: \.self) { url in
-							linkBuilder(for: PixabayImage.sampleImage, content: {
+						ForEach(imagesDataStore.images, id: \.id) { image in
+							linkBuilder(for: image, content: {
 								AsyncImage(
-									url: url,
+									url: URL(string: image.webformatURL)!,
 									placeholder: { ProgressView() },
 									image: { Image(uiImage: $0).resizable() }
 								)

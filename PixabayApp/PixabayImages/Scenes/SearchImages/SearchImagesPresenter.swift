@@ -17,11 +17,7 @@ class SearchImagesPresenter {
 
 extension SearchImagesPresenter: SearchImagesPresentationLogic {
 	func presentImages(response: SearchImages.Search.Response) {
-		let viewModel = SearchImages.Search.ViewModel(
-			images: response.images.compactMap {
-				URL(string: $0.webformatURL) ?? nil
-			}
-		)
+		let viewModel = SearchImages.Search.ViewModel(images: response.images)
 		view?.displayImages(viewModel: viewModel)
 	}
 }

@@ -18,8 +18,7 @@ enum SearchImages {
 		}
 
 		struct ViewModel {
-			var images: [URL]
+			var images: [PixabayImage]
 		}
 	}
 }
-

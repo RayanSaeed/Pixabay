@@ -7,14 +7,10 @@
 
 import Foundation
 
-protocol ImageDetailsPresentationLogic {
-	func presentImageDetails(response: ImageDetails.Details.Response)
-}
+protocol ImageDetailsPresentationLogic { }
 
 class ImageDetailsPresenter {
 	var view: ImageDetailsDisplayLogic?
 }
 
-extension ImageDetailsPresenter: ImageDetailsPresentationLogic {
-	func presentImageDetails(response: ImageDetails.Details.Response) { }
-}
+extension ImageDetailsPresenter: ImageDetailsPresentationLogic { }

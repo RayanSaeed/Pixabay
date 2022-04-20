@@ -13,7 +13,7 @@ struct PixabayImageSearchResponse: Decodable {
 	let hits: [PixabayImage]
 }
 
-struct PixabayImage: Codable {
+struct PixabayImage: Codable, Hashable {
 
 	/// Unique ID of the Pixabay Image
 	let id: Int
