@@ -26,11 +26,11 @@ extension SearchImagesView {
 	func linkBuilder<Content: View>(
 		for image: PixabayImage,
 		@ViewBuilder content: () -> Content
-	  ) -> some View {
+	) -> some View {
 		NavigationLink(
-		  destination: router?.makeImageDetailsView(with: image)) {
-			  content()
-		}
+			destination: router?.makeImageDetailsView(with: image)) {
+				content()
+			}
 	}
 }
 
