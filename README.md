@@ -13,3 +13,9 @@ Presenter parse the data and return to View.
 As the app grows larger, you will have additional components such as Router and Worker. Router takes care of all the navigation logics navigation logic while Worker helps lessen the burden of Interactor by performing task such as network call, implementing 3rd party SDK and etc.
 
 Do note that Worker should be easily used by multiple interactors. 
+
+# Architecture - Presentation using Draw.io
+
+Here I have included a representation of my project that follows the Clean Swift architecture
+
+![Pixabay drawio](https://user-images.githubusercontent.com/8598858/164211078-2f7307d5-a395-4adc-8804-fc7c87f71ee1.png)
