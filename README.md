@@ -14,7 +14,7 @@ As the app grows larger, you will have additional components such as Router and 
 
 Do note that Worker should be easily used by multiple interactors. 
 
-# Architecture - Presentation using Draw.io
+## Architecture Diagram using Draw.io
 
 Here I have included a representation of my project that follows the Clean Swift architecture
 
