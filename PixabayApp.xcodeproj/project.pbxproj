@@ -243,9 +243,9 @@
 		C1683201280882A600A2E035 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				C16832022808884800A2E035 /* CombineAPI.swift */,
-				C16832042808888200A2E035 /* APIError.swift */,
 				C16832062808898100A2E035 /* Endpoint.swift */,
+				C16832042808888200A2E035 /* APIError.swift */,
+				C16832022808884800A2E035 /* CombineAPI.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
