@@ -34,7 +34,7 @@ extension PixabayImagesEndpoint: Endpoint {
 
 	var apiKey: String { "26793717-02a1bcbc5523b161a6fc54f55" }
 
-	var base: String { "https://pixabay.com" }
+	var baseUrl: String { "https://pixabay.com" }
 
 	var path: String { "/api" }
 
